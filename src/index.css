@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* InBricks Brand Colors */
+    --background: 60 56% 97%;
+    --foreground: 210 15% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 22%;
+
+    /* Teal Green - Primary */
+    --primary: 177 91% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Dark Slate - Secondary */
+    --secondary: 210 15% 22%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Lime Green - Accent */
+    --accent: 75 58% 50%;
+    --accent-foreground: 210 15% 22%;
+
+    --muted: 60 20% 94%;
+    --muted-foreground: 210 10% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 60 20% 88%;
+    --input: 60 20% 88%;
+    --ring: 177 91% 38%;
+
+    --radius: 0.75rem;
+
+    /* Custom brand tokens */
+    --teal: 177 91% 38%;
+    --teal-dark: 177 91% 30%;
+    --teal-light: 177 91% 95%;
+    --lime: 75 58% 50%;
+    --lime-dark: 75 58% 42%;
+    --lime-light: 75 58% 92%;
+    --slate: 210 15% 22%;
+    --slate-light: 210 15% 35%;
+    --sand: 60 56% 91%;
+    --sand-light: 60 56% 97%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(177 91% 38%) 0%, hsl(177 91% 30%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(75 58% 50%) 0%, hsl(75 58% 42%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(210 15% 22%) 0%, hsl(210 15% 15%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(210 15% 22% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(210 15% 22% / 0.1), 0 2px 4px -2px hsl(210 15% 22% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(210 15% 22% / 0.1), 0 4px 6px -4px hsl(210 15% 22% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(210 15% 22% / 0.1), 0 8px 10px -6px hsl(210 15% 22% / 0.1);
+    --shadow-teal: 0 10px 40px -10px hsl(177 91% 38% / 0.4);
+    --shadow-lime: 0 10px 40px -10px hsl(75 58% 50% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 15% 12%;
+    --foreground: 60 20% 95%;
+
+    --card: 210 15% 15%;
+    --card-foreground: 60 20% 95%;
+
+    --popover: 210 15% 15%;
+    --popover-foreground: 60 20% 95%;
+
+    --primary: 177 91% 45%;
+    --primary-foreground: 210 15% 10%;
+
+    --secondary: 210 15% 25%;
+    --secondary-foreground: 60 20% 95%;
+
+    --accent: 75 58% 55%;
+    --accent-foreground: 210 15% 10%;
+
+    --muted: 210 15% 20%;
+    --muted-foreground: 210 10% 60%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 177 91% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .text-gradient-teal {
+    @apply bg-gradient-to-r from-primary to-teal-dark bg-clip-text text-transparent;
+  }
+
+  .text-gradient-lime {
+    @apply bg-gradient-to-r from-accent to-lime-dark bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-teal-dark transition-all duration-300 shadow-md hover:shadow-teal;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-lime-dark transition-all duration-300 shadow-md hover:shadow-lime font-semibold;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+  }
+
+  .link-underline {
+    @apply relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+
+  .animate-count-up {
+    animation: countUp 2s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
