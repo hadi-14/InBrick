@@ -25,8 +25,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    lines: ['info@inbricks.pk', 'sales@inbricks.pk'],
-    href: 'mailto:info@inbricks.pk',
+    lines: ['info.inbrick@gmail.com', 'sales@inbricks.pk'],
+    href: 'mailto:info.inbrick@gmail.com',
   },
   {
     icon: Clock,
