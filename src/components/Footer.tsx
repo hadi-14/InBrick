@@ -23,8 +23,8 @@ export const Footer = () => {
           {/* About Column */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-primary-foreground" />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+              <img src="/logo.png" alt="InBricks Logo" className="w-10 h-10 object-contain" />
               </div>
               <span className="text-2xl font-bold text-primary-foreground">
                 InBricks

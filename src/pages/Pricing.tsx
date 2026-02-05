@@ -13,19 +13,19 @@ import { Check, Truck, Clock, MapPin, Calculator } from 'lucide-react';
 const pricingTiers = [
   {
     range: '1 - 10,000',
-    price: 'PKR 12',
+    price: 'PKR 30',
     discount: '',
     popular: false,
   },
   {
     range: '10,001 - 50,000',
-    price: 'PKR 11',
+    price: 'PKR 27',
     discount: '8% OFF',
     popular: true,
   },
   {
     range: '50,001+',
-    price: 'PKR 10',
+    price: 'PKR 25',
     discount: '17% OFF',
     popular: false,
   },
@@ -84,13 +84,13 @@ const Pricing = () => {
   });
 
   const calculatePrice = (count: number) => {
-    if (count <= 10000) return count * 12;
-    if (count <= 50000) return count * 11;
-    return count * 10;
+    if (count <= 10000) return count * 30;
+    if (count <= 50000) return count * 27;
+    return count * 25;
   };
 
   const calculateTraditionalPrice = (count: number) => {
-    return count * 25; // Average traditional brick price
+    return count * 32; // Average traditional brick price
   };
 
   const inbricksPrice = calculatePrice(brickCount);
