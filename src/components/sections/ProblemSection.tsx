@@ -11,7 +11,7 @@ const problems = [
   {
     icon: DollarSign,
     title: 'High Construction Costs',
-    description: 'Traditional bricks cost PKR 13-56 per piece, making affordable housing difficult for many Pakistanis',
+    description: 'Traditional bricks cost PKR 20-56 per piece, making affordable housing difficult for many Pakistanis',
     color: 'bg-orange-500/10 text-orange-500',
   },
   {

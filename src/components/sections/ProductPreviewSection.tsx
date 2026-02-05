@@ -30,7 +30,7 @@ export const ProductPreviewSection = () => {
                 <div className="text-sm text-muted-foreground">Compressive Strength</div>
               </div>
               <div className="bg-muted rounded-xl p-4">
-                <div className="text-2xl font-bold text-primary">PKR 8-12</div>
+                <div className="text-2xl font-bold text-primary">PKR 30-42</div>
                 <div className="text-sm text-muted-foreground">Per Brick</div>
               </div>
               <div className="bg-muted rounded-xl p-4">

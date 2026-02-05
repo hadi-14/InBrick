@@ -11,7 +11,7 @@ const features = [
   {
     icon: PiggyBank,
     title: 'Cost-Effective',
-    description: '30-40% cheaper than conventional bricks (est. PKR 8-12 per brick)',
+    description: '30-40% cheaper than conventional bricks (est. PKR 30-42 per brick)',
   },
   {
     icon: Shield,

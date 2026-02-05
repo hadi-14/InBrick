@@ -6,7 +6,7 @@ import { Leaf, Users, Eye, Shield, Lightbulb } from 'lucide-react';
 
 const comparisonData = [
   { feature: 'Material Source', inbricks: 'Recycled plastic waste + sand', traditional: 'Clay from soil (depletes land)' },
-  { feature: 'Cost', inbricks: 'PKR 8-12 per brick', traditional: 'PKR 13-56 per brick' },
+  { feature: 'Cost', inbricks: 'PKR 30-42 per brick', traditional: 'PKR 20-56 per brick' },
   { feature: 'Strength (PSI)', inbricks: '1350+ PSI', traditional: '600-800 PSI' },
   { feature: 'Weight', inbricks: 'Lightweight', traditional: 'Heavy' },
   { feature: 'Water Resistance', inbricks: 'Excellent', traditional: 'Moderate' },
@@ -73,20 +73,20 @@ const About = () => {
                 </h2>
                 <div className="prose prose-lg max-w-none text-muted-foreground">
                   <p className="text-lg leading-relaxed mb-6">
-                    InBricks was founded with a simple yet powerful vision: to solve Pakistan's dual challenges 
-                    of plastic pollution and affordable housing. We believe that innovation and sustainability 
-                    go hand-in-hand. By transforming plastic waste into durable construction materials, we're 
+                    InBricks was founded with a simple yet powerful vision: to solve Pakistan's dual challenges
+                    of plastic pollution and affordable housing. We believe that innovation and sustainability
+                    go hand-in-hand. By transforming plastic waste into durable construction materials, we're
                     creating economic value while protecting our environment for future generations.
                   </p>
                   <p className="text-lg leading-relaxed mb-6">
-                    Our journey began with a commitment to research and development, perfecting a production 
-                    process that balances strength, affordability, and environmental responsibility. We spent 
-                    countless hours testing different compositions, temperatures, and molding techniques to 
+                    Our journey began with a commitment to research and development, perfecting a production
+                    process that balances strength, affordability, and environmental responsibility. We spent
+                    countless hours testing different compositions, temperatures, and molding techniques to
                     create a product that not only matches but exceeds traditional brick standards.
                   </p>
                   <p className="text-lg leading-relaxed">
-                    Today, InBricks stands at the forefront of Pakistan's green building revolution. We're 
-                    not just manufacturing bricks—we're building a movement toward sustainable construction 
+                    Today, InBricks stands at the forefront of Pakistan's green building revolution. We're
+                    not just manufacturing bricks—we're building a movement toward sustainable construction
                     practices that benefit communities, businesses, and the planet.
                   </p>
                 </div>
@@ -119,8 +119,8 @@ const About = () => {
                   </thead>
                   <tbody>
                     {comparisonData.map((row, index) => (
-                      <tr 
-                        key={row.feature} 
+                      <tr
+                        key={row.feature}
                         className={index % 2 === 0 ? 'bg-background' : 'bg-muted/30'}
                       >
                         <td className="px-6 py-4 font-medium text-secondary">{row.feature}</td>
