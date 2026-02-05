@@ -16,28 +16,28 @@ const impactStats = [
 const circularEconomySteps = [
   {
     step: 1,
-    title: 'Plastic Waste Collection',
-    description: 'We partner with waste collectors and communities to gather plastic waste that would otherwise end up in landfills or oceans.',
+    title: 'Collection',
+    description: 'Diverts 40-50% recycled plastic content per brick, addressing pollution at source.',
   },
   {
     step: 2,
-    title: 'Processing & Cleaning',
-    description: 'Collected plastic is sorted, cleaned, and prepared for the manufacturing process.',
+    title: 'Processing',
+    description: 'Waste is sorted, cleaned, and processed to create raw material for brick production.',
   },
   {
     step: 3,
-    title: 'Eco-Brick Production',
-    description: 'Plastic is melted and combined with sand to create durable, high-quality construction bricks.',
+    title: 'Manufacturing',
+    description: 'Streamlined production cycle transforms waste into certified building materials in under 48 hours.',
   },
   {
     step: 4,
-    title: 'Sustainable Construction',
-    description: 'Our eco-bricks are used in buildings, creating affordable and sustainable structures.',
+    title: 'Testing',
+    description: 'Rigorous testing: Compressive strength (3.5+ MPa), Water absorption (<6%), Dimensional accuracy (±2mm).',
   },
   {
     step: 5,
-    title: 'End-of-Life Recycling',
-    description: 'When buildings are demolished, our bricks can be recycled back into the production cycle.',
+    title: 'Production',
+    description: 'Certified to BS EN 771 and ISO 9001 standards, ready for sustainable construction.',
   },
 ];
 
@@ -136,8 +136,8 @@ const Sustainability = () => {
                     Plastic Waste Reduction
                   </h2>
                   <p className="text-lg text-muted-foreground mb-6">
-                    Every 1,000 InBricks diverts approximately <span className="text-accent font-bold">250 kg</span> of 
-                    plastic from landfills and oceans. Our innovative process transforms this environmental 
+                    Every 1,000 InBricks diverts approximately <span className="text-accent font-bold">250 kg</span> of
+                    plastic from landfills and oceans. Our innovative process transforms this environmental
                     burden into valuable construction materials.
                   </p>
                   <ul className="space-y-4">
@@ -164,8 +164,8 @@ const Sustainability = () => {
               </AnimatedSection>
               <AnimatedSection delay={200}>
                 <div className="relative">
-                  <img 
-                    src={transformationImage} 
+                  <img
+                    src={transformationImage}
                     alt="Plastic to brick transformation"
                     className="rounded-xl shadow-xl w-full"
                   />
@@ -189,7 +189,7 @@ const Sustainability = () => {
                   Carbon Footprint Comparison
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Our production process generates <span className="text-accent font-bold">60% fewer emissions</span> compared 
+                  Our production process generates <span className="text-accent font-bold">60% fewer emissions</span> compared
                   to traditional brick kilns
                 </p>
               </div>

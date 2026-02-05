@@ -4,20 +4,20 @@ import { Trash2, DollarSign, Factory } from 'lucide-react';
 const problems = [
   {
     icon: Trash2,
-    title: 'Plastic Pollution Crisis',
-    description: 'Pakistan generates 48.5 million tons of waste annually, with 9% being plastic that harms our environment',
+    title: 'Environmental Emergency',
+    description: 'Over 8 million tonnes of plastic enter landfills annually, contaminating soil and waterways whilst persisting for centuries',
     color: 'bg-red-500/10 text-red-500',
   },
   {
     icon: DollarSign,
-    title: 'High Construction Costs',
-    description: 'Traditional bricks cost PKR 20-56 per piece, making affordable housing difficult for many Pakistanis',
+    title: 'Prohibitive Construction Costs',
+    description: 'Traditional bricks cost 40-60% more than sustainable alternatives, pricing out affordable housing initiatives',
     color: 'bg-orange-500/10 text-orange-500',
   },
   {
     icon: Factory,
-    title: 'Carbon Emissions',
-    description: 'Traditional brick kilns contribute 40% of construction-related carbon emissions globally',
+    title: 'Industry Sustainability Gap',
+    description: 'Construction accounts for 38% of global CO₂ emissions, yet eco-friendly options remain scarce and expensive',
     color: 'bg-gray-500/10 text-gray-500',
   },
 ];

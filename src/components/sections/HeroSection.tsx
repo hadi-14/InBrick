@@ -32,20 +32,18 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-8 animate-fade-in">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            <span className="text-accent text-sm font-medium">Building Tomorrow, Sustainably</span>
+            <span className="text-accent text-sm font-medium">Building Tomorrow, Brick by Brick</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
-            Transforming Plastic Waste Into{' '}
-            <span className="text-primary">Sustainable</span>{' '}
-            Building Solutions
+            INBRICK. BUILDING TOMORROW.{' '}
+            <span className="text-primary">BRICK BY BRICK</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            Premium eco-bricks made from recycled plastic—stronger, lighter, and more 
-            affordable than traditional bricks
+            Pioneering Innovation in Climate Technology. Transforming plastic waste into affordable, sustainable building materials for a greener tomorrow.
           </p>
 
           {/* CTAs */}
@@ -60,7 +58,12 @@ export const HeroSection = () => {
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 gap-3 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            {trustIndicators.map((indicator, index) => (
+            {[
+              '40-50% recycled plastic content',
+              '35% cost reduction',
+              '25% lighter than clay bricks',
+              'Excellent water resistance',
+            ].map((indicator, index) => (
               <div
                 key={index}
                 className="flex items-center gap-2 text-white/90"

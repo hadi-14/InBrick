@@ -138,7 +138,7 @@ const Business = () => {
                     </div>
                     <h3 className="text-2xl font-bold text-secondary mb-3">{segment.title}</h3>
                     <p className="text-muted-foreground mb-6">{segment.description}</p>
-                    
+
                     <ul className="space-y-3 mb-8 flex-grow">
                       {segment.benefits.map((benefit) => (
                         <li key={benefit} className="flex items-start gap-3">
@@ -157,6 +157,58 @@ const Business = () => {
                   </div>
                 </AnimatedSection>
               ))}
+            </div>
+
+            <div className="mt-20">
+              <AnimatedSection>
+                <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+                  Market Opportunity & Revenue
+                </h2>
+              </AnimatedSection>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <AnimatedSection delay={0}>
+                  <div className="bg-card p-8 rounded-xl shadow-lg border-l-4 border-primary h-full">
+                    <h3 className="text-2xl font-bold text-secondary mb-4">Substantial Market</h3>
+                    <p className="text-muted-foreground mb-4">
+                      The sustainable building materials market is projected to reach <span className="font-bold text-primary">£235 billion by 2027</span>, growing at 11.2% annually.
+                    </p>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <ArrowRight className="w-4 h-4 text-accent mt-1" />
+                        <span className="text-sm">Commercial builders seeking cost-effective materials</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ArrowRight className="w-4 h-4 text-accent mt-1" />
+                        <span className="text-sm">Affordable housing schemes requiring budget solutions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ArrowRight className="w-4 h-4 text-accent mt-1" />
+                        <span className="text-sm">Government infrastructure with sustainability mandates</span>
+                      </li>
+                    </ul>
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedSection delay={100}>
+                  <div className="bg-card p-8 rounded-xl shadow-lg border-l-4 border-accent h-full">
+                    <h3 className="text-2xl font-bold text-secondary mb-4">Revenue Model</h3>
+                    <p className="text-muted-foreground mb-6">
+                      Our business model generates <span className="font-bold text-accent">28-32% gross margins</span> whilst remaining 35% cheaper than conventional alternatives.
+                    </p>
+                    <div className="space-y-4">
+                      <div className="bg-muted/50 p-4 rounded-lg">
+                        <span className="font-semibold block mb-1">Bulk Manufacturing</span>
+                        <span className="text-sm text-muted-foreground">Large-volume production enables economies of scale</span>
+                      </div>
+                      <div className="bg-muted/50 p-4 rounded-lg">
+                        <span className="font-semibold block mb-1">B2B Distribution</span>
+                        <span className="text-sm text-muted-foreground">Direct partnerships with contractors and developers</span>
+                      </div>
+                    </div>
+                  </div>
+                </AnimatedSection>
+              </div>
             </div>
           </div>
         </section>

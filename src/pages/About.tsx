@@ -5,13 +5,13 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 import { Leaf, Users, Eye, Shield, Lightbulb } from 'lucide-react';
 
 const comparisonData = [
-  { feature: 'Material Source', inbricks: 'Recycled plastic waste + sand', traditional: 'Clay from soil (depletes land)' },
-  { feature: 'Cost', inbricks: 'PKR 30-42 per brick', traditional: 'PKR 20-56 per brick' },
-  { feature: 'Strength (PSI)', inbricks: '1350+ PSI', traditional: '600-800 PSI' },
-  { feature: 'Weight', inbricks: 'Lightweight', traditional: 'Heavy' },
-  { feature: 'Water Resistance', inbricks: 'Excellent', traditional: 'Moderate' },
-  { feature: 'Carbon Footprint', inbricks: '60% lower', traditional: 'High (kiln emissions)' },
-  { feature: 'Environmental Impact', inbricks: 'Reduces plastic waste', traditional: 'Depletes natural resources' },
+  { feature: 'Material Source', inbricks: 'Recycled plastic waste (40-50%)', traditional: 'Clay from soil (depletes land)' },
+  { feature: 'Cost Efficiency', inbricks: '35% Cost Reduction', traditional: 'Standard Cost' },
+  { feature: 'Strength', inbricks: '3.5+ MPa', traditional: 'Variable' },
+  { feature: 'Weight', inbricks: '1.8kg (25% lighter)', traditional: '2.4kg+ (Heavy)' },
+  { feature: 'Water Resistance', inbricks: 'Excellent (Natural)', traditional: 'Absorbs Moisture' },
+  { feature: 'Carbon Footprint', inbricks: '67% CO₂ Reduction', traditional: 'High (kiln emissions)' },
+  { feature: 'Environmental Impact', inbricks: 'Diverts pollution at source', traditional: 'Depletes natural resources' },
 ];
 
 const values = [
@@ -130,6 +130,54 @@ const About = () => {
                     ))}
                   </tbody>
                 </table>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+
+        {/* Growth Strategy Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container-custom">
+            <AnimatedSection>
+              <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+                Growth Strategy & Roadmap
+              </h2>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+              <AnimatedSection delay={0}>
+                <div className="bg-card p-6 rounded-xl shadow-md h-full border-t-4 border-primary">
+                  <span className="text-primary font-bold text-lg mb-2 block">Phase 1: Foundation (Year 1)</span>
+                  <p className="text-muted-foreground">
+                    Establish primary production facility with 500,000 brick monthly capacity. Secure partnerships with 15-20 regional contractors.
+                  </p>
+                </div>
+              </AnimatedSection>
+              <AnimatedSection delay={100}>
+                <div className="bg-card p-6 rounded-xl shadow-md h-full border-t-4 border-accent">
+                  <span className="text-accent font-bold text-lg mb-2 block">Phase 2: Diversification (Year 2)</span>
+                  <p className="text-muted-foreground">
+                    Expand product range to interlocking tiles, paving blocks, and decorative panels. Double production capacity through automation.
+                  </p>
+                </div>
+              </AnimatedSection>
+              <AnimatedSection delay={200}>
+                <div className="bg-card p-6 rounded-xl shadow-md h-full border-t-4 border-secondary">
+                  <span className="text-secondary font-bold text-lg mb-2 block">Phase 3: Market Leadership (Year 3)</span>
+                  <p className="text-muted-foreground">
+                    Open three regional manufacturing hubs. Form strategic alliances with national construction firms and government housing schemes.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            <AnimatedSection>
+              <div className="bg-primary/5 rounded-2xl p-8 md:p-12 text-center">
+                <h3 className="text-2xl font-bold text-secondary mb-4">Vision for 2030</h3>
+                <p className="text-xl text-secondary/80 max-w-3xl mx-auto italic">
+                  "To become the leading provider of sustainable building materials across South Asia, diverting 50,000 tonnes of plastic waste annually whilst making green construction accessible to all."
+                </p>
               </div>
             </AnimatedSection>
           </div>
