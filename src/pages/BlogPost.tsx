@@ -5,7 +5,7 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, Share2, Facebook, Linkedin, Twitter } from 'lucide-react';
-import ecoBricksImage from '@/assets/eco-bricks-product.jpg';
+import ecoBricksImage from '@/assets/eco-bricks.png';
 import transformationImage from '@/assets/transformation.jpg';
 
 const blogPosts = [
@@ -214,8 +214,8 @@ const BlogPost = () => {
           <div className="container-custom">
             <AnimatedSection>
               <div className="max-w-4xl mx-auto">
-                <Link 
-                  to="/blog" 
+                <Link
+                  to="/blog"
                   className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground mb-6 transition-colors"
                 >
                   <ArrowLeft className="w-4 h-4" />
@@ -247,8 +247,8 @@ const BlogPost = () => {
           <div className="container-custom">
             <AnimatedSection>
               <div className="max-w-4xl mx-auto">
-                <img 
-                  src={post.image} 
+                <img
+                  src={post.image}
                   alt={post.title}
                   className="w-full h-64 md:h-96 object-cover rounded-xl shadow-2xl"
                 />
@@ -264,7 +264,7 @@ const BlogPost = () => {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Article Content */}
                 <AnimatedSection className="lg:col-span-8">
-                  <article 
+                  <article
                     className="prose prose-lg max-w-none prose-headings:text-secondary prose-headings:font-bold prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-secondary prose-li:text-muted-foreground"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                   />
@@ -280,7 +280,7 @@ const BlogPost = () => {
                         Share this article
                       </h3>
                       <div className="flex items-center gap-3">
-                        <a 
+                        <a
                           href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -288,7 +288,7 @@ const BlogPost = () => {
                         >
                           <Facebook className="w-5 h-5" />
                         </a>
-                        <a 
+                        <a
                           href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -296,7 +296,7 @@ const BlogPost = () => {
                         >
                           <Twitter className="w-5 h-5" />
                         </a>
-                        <a 
+                        <a
                           href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(post.title)}`}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -312,7 +312,7 @@ const BlogPost = () => {
                       <h3 className="font-bold text-secondary mb-4">Related Articles</h3>
                       <div className="space-y-4">
                         {relatedPosts.map((relatedPost) => (
-                          <Link 
+                          <Link
                             key={relatedPost.id}
                             to={`/blog/${relatedPost.id}`}
                             className="block group"

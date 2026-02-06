@@ -1,6 +1,6 @@
 import { AnimatedSection } from '@/components/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import ecoBricksImage from '@/assets/eco-bricks-product.jpg';
+import ecoBricksImage from '@/assets/eco-bricks.png';
 
 export const ProductPreviewSection = () => {
   return (
@@ -14,8 +14,8 @@ export const ProductPreviewSection = () => {
               Premium Eco-Bricks for Every Project
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              Our standard eco-bricks are designed for versatility and durability. 
-              Made from 70% sand and 30% recycled plastic, they exceed traditional 
+              Our standard eco-bricks are designed for versatility and durability.
+              Made from 70% sand and 30% recycled plastic, they exceed traditional
               brick performance at a fraction of the cost.
             </p>
 

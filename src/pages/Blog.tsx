@@ -5,7 +5,7 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight, Download, FileText, BookOpen } from 'lucide-react';
-import ecoBricksImage from '@/assets/eco-bricks-product.jpg';
+import ecoBricksImage from '@/assets/eco-bricks.png';
 import transformationImage from '@/assets/transformation.jpg';
 
 const blogPosts = [
@@ -136,8 +136,8 @@ const Blog = () => {
                 <AnimatedSection key={post.id} delay={index * 100}>
                   <article className="bg-card rounded-xl shadow-lg overflow-hidden h-full flex flex-col group">
                     <div className="aspect-video relative overflow-hidden">
-                      <img 
-                        src={post.image} 
+                      <img
+                        src={post.image}
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -162,7 +162,7 @@ const Blog = () => {
                       <p className="text-muted-foreground text-sm flex-grow mb-4">
                         {post.excerpt}
                       </p>
-                      <Link 
+                      <Link
                         to={`/blog/${post.id}`}
                         className="inline-flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all duration-300"
                       >

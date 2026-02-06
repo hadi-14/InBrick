@@ -5,7 +5,7 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Check, Download, Home, Building2, Fence, Landmark, Heart, FileText } from 'lucide-react';
-import ecoBricksImage from '@/assets/eco-bricks-product.jpg';
+import ecoBricksImage from '@/assets/eco-bricks.png';
 
 const products = [
   {
